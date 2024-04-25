@@ -8,13 +8,6 @@ const Carrito = () => {
     const { carrito, setCarrito, precioTotal, vaciarCarrito, agregarAlCarrito } = useContext(CartContext);
     const [loading, setLoading] = useState(true);
 
-    useEffect(() => {
-        setLoading(true);
-        setTimeout(() => {
-            setLoading(false);
-        }, 100);
-    }, [carrito]);
-
     const handleVaciar = () => {
         vaciarCarrito();
     }
