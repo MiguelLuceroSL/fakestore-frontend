@@ -2,18 +2,9 @@ import React, { useContext, useEffect, useState } from 'react'
 import { CartContext } from '../context/CartContext';
 import axios from 'axios';
 import '../styles/styleCart.css';
-import CargandoCarrito from "./CargandoCarrito";
 
 const Carrito = () => {
     const { carrito, setCarrito, precioTotal, vaciarCarrito, agregarAlCarrito } = useContext(CartContext);
-    const [loading, setLoading] = useState(true);
-
-    useEffect(() => {
-        setLoading(true);
-        setTimeout(() => {
-            setLoading(false);
-        }, 1000);
-    }, [carrito]);
 
     const handleVaciar = () => {
         vaciarCarrito();
@@ -24,17 +15,10 @@ const Carrito = () => {
         axios.post('http://localhost:3000/comprar', carrito)
             .then(response => {
                 console.log('Productos comprados:', response.data);
-                setLoading(false);
             })
             .catch(error => {
                 console.error('Error al comprar productos:', error);
-                setLoading(false);
             });
-    }
-
-
-    if (loading || carrito.length === 0) {
-        return <CargandoCarrito />;
     }
 
     const decrementarCantidad = (item) => {
