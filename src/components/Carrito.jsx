@@ -12,7 +12,7 @@ const Carrito = () => {
         setLoading(true);
         setTimeout(() => {
             setLoading(false);
-        }, 50000);
+        }, 100);
     }, [carrito]);
 
     const handleVaciar = () => {
@@ -21,7 +21,7 @@ const Carrito = () => {
 
     const handleComprar = () => {
         setLoading(true);
-        axios.post('https://fakestore-backend.vercel.app/comprar', carrito)
+        axios.post('http://localhost:3000/comprar', carrito)
             .then(response => {
                 console.log('Productos comprados:', response.data);
                 setLoading(false);

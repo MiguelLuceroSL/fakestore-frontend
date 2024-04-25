@@ -13,8 +13,8 @@ const ItemListContainer = () => {
         const fetchData = async () => {
             try {
                 const url = category
-                    ? `https://fakestore-backend.vercel.app/productos?category=${category}`
-                    : 'https://fakestore-backend.vercel.app/productos';
+                    ? `http://localhost:3000/productos?category=${category}`
+                    : 'http://localhost:3000/productos';
 
                 const response = await fetch(url);
 

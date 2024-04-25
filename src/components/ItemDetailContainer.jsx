@@ -9,7 +9,7 @@ const ItemDetailContainer = () => {
     const { id } = useParams();
 
     useEffect(() => {
-        fetch(`https://fakestore-backend.vercel.app/productos/${id}`)
+        fetch(`http://localhost:3000/productos/${id}`)
             .then(res => {
                 if (!res.ok) {
                     throw new Error('Error al obtener los detalles del producto');
