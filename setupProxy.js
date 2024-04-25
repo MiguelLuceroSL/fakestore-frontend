@@ -4,7 +4,7 @@ module.exports = function (app) {
     app.use(
         '/comprar',
         createProxyMiddleware({
-            target: 'https://fakestore-backend.vercel.app',
+            target: 'http://fakestore-backend.vercel.app',
             changeOrigin: true,
         })
     );
