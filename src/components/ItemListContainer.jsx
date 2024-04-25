@@ -22,7 +22,7 @@ const ItemListContainer = () => {
                     throw new Error('Error al obtener los productos');
                 }
 
-                const data = await response.json();
+                const data = await JSON.parse(response);
                 setProducts(data);
                 setTitle(category ? category : "Products");
                 setLoading(false);

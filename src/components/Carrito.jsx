@@ -12,7 +12,7 @@ const Carrito = () => {
         setLoading(true);
         setTimeout(() => {
             setLoading(false);
-        }, 1000);
+        }, 50000);
     }, [carrito]);
 
     const handleVaciar = () => {
