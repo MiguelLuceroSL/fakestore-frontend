@@ -1,0 +1,256 @@
+/*NAVBAR*/
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #E2DCD4;
+    padding: 10px;
+    align-items: center;
+    border-bottom: 1px solid rgb(200, 200, 200);
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul :hover {
+    text-decoration: underline;
+    color: #0B0B10;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: #BB191F;
+    font-size: 23px;
+    border-radius: 5px;
+    padding: 5px;
+
+}
+
+/*CARRITO*/
+
+.carro {
+    display: flex;
+    flex-direction: row;
+    gap: 0.3rem;
+}
+
+.numeroCarro {
+    font-size: 16px;
+}
+
+.numeroCarro:hover {
+    font-size: 16px;
+}
+
+.nav_toggle {
+    display: none;
+}
+
+@media (max-width: 1230px) {
+    .menu-link {
+        font-size: 20px;
+    }
+
+    .nav_items {
+        margin-left: 13rem;
+    }
+
+    .logo {
+        width: 45px;
+        height: auto;
+    }
+
+    .logoMain {
+        /*widt original 400px - height origina 93px        x0.9*/
+        width: 360px;
+        height: 83.7px;
+    }
+}
+
+@media (max-width: 1144px) {
+    .menu-link {
+        font-size: 18px;
+    }
+
+    .logo {
+        width: 40px;
+        height: auto;
+    }
+
+    .logoMain {
+        /*widt original 400px - height origina 93px        x0.8*/
+        width: 320px;
+        height: 74.4px;
+    }
+}
+
+@media (max-width: 1094px) {
+    .logo {
+        width: 35px;
+        height: auto;
+    }
+
+    .logoMain {
+        /*widt original 400px - height origina 93px        x0.7*/
+        width: 280px;
+        height: 65.1px;
+    }
+}
+
+@media (max-width: 1016px) {
+
+
+    .logo {
+        width: 30px;
+        height: auto;
+    }
+
+    .logoMain {
+        /*widt original 400px - height origina 93px        x0.6*/
+        width: 240px;
+        height: 55.8px;
+    }
+}
+
+@media (max-width: 966px) {
+    .menu-link {
+        font-size: 15px;
+    }
+
+    .logo {
+        width: 25px;
+        height: auto;
+    }
+
+    .logoMain {
+        /*widt original 400px - height origina 93px        x0.5*/
+        width: 200px;
+        height: 46.5px;
+    }
+}
+
+@media (max-width: 860px) {
+    .nav_items {
+        margin-left: 8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        align-items: flex-start;
+        justify-content: center;
+        height: 4rem;
+    }
+
+
+    .nav_items {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+        margin-top: 60px;
+        transition: 0.3s ease all;
+        align-items: flex-start;
+        transform: translateX(-500%);
+        border-radius: 10px;
+        background-color: #5D645B;
+    }
+
+    .nav_items.open {
+        transform: translateX(0) !important;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu-palabra {
+        color: white;
+    }
+
+    .nav_toggle {
+        display: flex !important;
+        flex-direction: column;
+        margin: 15px;
+
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-right: 2rem;
+
+    }
+
+    .carro {
+        margin-top: 0.5rem;
+    }
+
+    .nav_toggle span {
+        width: 30px;
+        height: 4px;
+        background-color: white;
+        margin-bottom: 5px;
+        border-radius: 2px;
+        transform-origin: 5px 0px;
+        transition: all 0.2s linear;
+    }
+
+    .nav_toggle.open>span {
+        transform: rotate(45deg) translate(0px, 0px);
+    }
+
+    .nav_toggle.open>span:nth-child(2) {
+        display: none;
+    }
+
+    .nav_toggle.open>span:nth-child(3) {
+        transform: rotate(-45deg) translate(-5px, 1px);
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        place-content: space-evenly !important;
+    }
+
+    .menu {
+        width: 100%;
+        ;
+    }
+}
+
+@media (max-width: 380px) {
+
+    .nav_items {
+        margin-left: 6rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .nav_items {
+        margin-left: 5rem;
+    }
+}
+
+@media (max-width: 340px) {
+    .nav_items {
+        margin-left: 4rem;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .nav_items {
+        margin-left: 3rem;
+    }
+}

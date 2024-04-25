@@ -1,0 +1,94 @@
+ul {
+    list-style: none;
+}
+
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e2dcd4;
+    color: #fff;
+    height: 80px;
+    text-align: center;
+    border-top: 1px solid rgb(200, 200, 200);
+}
+
+.footer .icono {
+    margin: 0 10px;
+    position: relative;
+}
+
+.footer .icono .tooltip {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.footer .icono:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+    top: -50px;
+}
+
+.footer .icono .link {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: #4d4d4d;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.footer .icono .link:hover {
+    box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
+}
+
+.footer .icono .link svg {
+    position: relative;
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+}
+
+.footer .icono .link:hover {
+    color: white;
+}
+
+.footer .icono .link .filled {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #000;
+    transition: all 0.3s ease-in-out;
+}
+
+.footer .icono .link:hover .filled {
+    height: 100%;
+}
+
+.footer .icono .link[data-social="linkedin"] .filled,
+.footer .icono .link[data-social="linkedin"]~.tooltip {
+    background-color: #0274b3;
+}
+
+.footer .icono .link[data-social="github"] .filled,
+.footer .icono .link[data-social="github"]~.tooltip {
+    background-color: #000;
+}

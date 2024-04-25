@@ -1,0 +1,8 @@
+/*ESTILO GENERAL*/
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #e2dcd4;
+    width: 100%;
+}

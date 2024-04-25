@@ -1,0 +1,345 @@
+/*3-ITEM LIST CONTAINER (productos/inicio)*/
+
+/*3.1-ITEM LIST*/
+.container-list1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-list2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-list3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.main-title {
+    width: 70%;
+    font-family: Proxima Nova, -apple-system, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    font-size: 26px;
+    font-weight: normal;
+    align-items: start;
+}
+
+.categorias1 {
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-column-gap: 5rem;
+    grid-row-gap: 5rem;
+    margin-bottom: 5rem;
+}
+
+.categorias2 {
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-column-gap: 10rem;
+    grid-row-gap: 25rem;
+    margin-bottom: 8rem;
+}
+
+.categorias3 {
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-column-gap: 10rem;
+    grid-row-gap: 5rem;
+}
+
+/*3.2-ITEM*/
+.producto-box {
+    width: 12vw;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    align-items: center;
+    padding: 1rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    background-color: #ffffff;
+}
+
+.producto-box:hover {
+    transform: scale(1.05);
+}
+
+.producto {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.productos-card-img {
+    position: relative;
+    max-width: 12rem;
+    height: 15rem;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.productos-img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.oferta-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.offer-img {
+
+    width: 100%;
+    height: auto;
+}
+
+.productos-detalles {
+    margin-top: 1rem;
+    border-top: 1px solid #ededed;
+}
+
+.fuente {
+    font-family: Proxima Nova, -apple-system, Roboto, Arial, sans-serif;
+}
+
+.productos-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(51, 51, 51);
+}
+
+.productos-description {
+    color: rgb(79, 79, 79);
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.productos-category {
+    font-size: 12px;
+    font-weight: 300;
+    color: rgb(102, 102, 102);
+}
+
+.precio-original {
+    text-decoration: line-through;
+    color: rgb(153, 153, 153);
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.precio-con-descuento {
+    color: rgb(51, 51, 51);
+    font-size: 24px;
+    font-weight: 400;
+    padding: 0;
+}
+
+.off {
+    color: rgb(23, 179, 129);
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.precio-off {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.7rem;
+    padding: 0;
+}
+
+.ahorro {
+    display: flex;
+    justify-content: center;
+    color: rgb(51, 51, 51);
+    font-size: 15px;
+    font-weight: 400;
+    width: 100%;
+}
+
+@media (max-width: 1440px) {
+    .container-list1 {
+        height: 345vh;
+    }
+
+    .container-list3 {
+        height: 145vh;
+    }
+
+    .categorias1 {
+        margin-bottom: 3rem;
+    }
+
+    .categorias3 {
+        grid-template-columns: repeat(1, 150px);
+    }
+
+    .categorias3 {
+        grid-template-columns: repeat(4, 170px);
+    }
+
+    .producto-box {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1366px) {
+
+    .categorias1 {
+        margin-bottom: 3rem;
+        grid-template-columns: repeat(4, 180px);
+    }
+
+    .categorias2 {
+        grid-template-columns: repeat(4, 150px);
+        grid-column-gap: 9rem;
+    }
+
+    .categorias3 {
+        grid-template-columns: repeat(4, 120px);
+    }
+}
+
+@media (max-width: 1136px) {
+
+    .categorias1 {
+        grid-template-columns: repeat(4, 150px);
+    }
+
+    .categorias2 {
+        grid-template-columns: repeat(4, 130px);
+        grid-column-gap: 8rem;
+    }
+
+    .categorias3 {
+        grid-template-columns: repeat(4, 90px);
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .categorias1 {
+        grid-template-columns: repeat(4, 110px);
+    }
+
+    .categorias2 {
+        grid-template-columns: repeat(4, 100px);
+        grid-column-gap: 9rem;
+    }
+
+}
+
+@media (max-width: 960px) {
+
+    .categorias1 {
+        grid-template-columns: repeat(4, 100px);
+    }
+
+    .categorias2 {
+        grid-template-columns: repeat(4, 80px);
+        grid-column-gap: 9rem;
+    }
+
+    .categorias3 {
+        grid-template-columns: repeat(3, 120px);
+    }
+}
+
+@media (max-width: 800px) {
+    .container-list1 {
+        height: 700vh;
+    }
+
+    .container-list3 {
+        height: 210vh;
+    }
+
+    .categorias1 {
+        margin-top: 5rem;
+        grid-template-columns: repeat(2, 200px);
+    }
+
+    .categorias2 {
+        grid-template-columns: repeat(2, 200px);
+        grid-column-gap: 8rem;
+    }
+
+    .categorias3 {
+        grid-template-columns: repeat(2, 200px);
+    }
+}
+
+@media (max-width: 768px) {
+
+    .main-title {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        font-size: 40px;
+    }
+
+    .container-list3 {
+        height: 230vh;
+    }
+
+    .categorias2 {
+        margin-top: 10rem;
+    }
+
+    .categorias3 {
+        margin-top: 10rem;
+    }
+}
+
+@media (max-width: 660px) {
+    .container-list1 {
+        height: 1400vh;
+    }
+
+    .container-list3 {
+        height: 440vh;
+    }
+
+    .categorias1 {
+        margin-top: 5rem;
+        grid-template-columns: repeat(1, 200px);
+    }
+
+    .categorias2 {
+        grid-template-columns: repeat(1, 200px);
+        grid-column-gap: 9rem;
+    }
+
+    .categorias3 {
+        margin-top: 10rem;
+        grid-template-columns: repeat(1, 200px);
+    }
+}
+
+@media (max-width: 320px) {
+    .container-list1 {
+        height: 2350vh;
+    }
+
+}

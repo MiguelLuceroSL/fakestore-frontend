@@ -1,0 +1,136 @@
+/*ITEM DETAIL*/
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 75vh;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.producto-detalle {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 60%;
+    height: 80%;
+}
+
+.card-img {
+    object-fit: cover;
+    object-position: top;
+}
+
+.product-img {
+    max-width: 300px;
+    object-fit: cover;
+    object-position: top;
+    margin-left: 3rem;
+}
+
+.titulo {
+    max-width: 25rem;
+    font-size: 22px;
+    font-family: Proxima Nova, -apple-system, Roboto, Arial, sans-serif;
+    font-weight: 400;
+}
+
+.descripcion {
+
+    max-width: 80%;
+    font-size: 15px;
+    font-family: Proxima Nova, -apple-system, Roboto, Arial, sans-serif;
+    font-weight: 400;
+}
+
+.categoria {
+    font-size: 15px;
+    font-family: Proxima Nova, -apple-system, Roboto, Arial, sans-serif;
+    font-weight: 400;
+    color: #373737;
+}
+
+.descripcion-producto {
+    padding: 0;
+    font-size: 20px;
+    font-family: Proxima Nova, -apple-system, Roboto, Arial, sans-serif;
+    font-weight: 400;
+    color: #1b1b1b;
+}
+
+.container-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 3rem;
+    padding-right: 3rem;
+
+}
+
+.precio {
+    display: flex;
+    align-items: center;
+    color: #f04158;
+    gap: 1rem;
+    font-size: 25px;
+    margin-top: 2rem;
+    font-weight: 300;
+    font-family: AktivGrotesk Bold, arial, sans-serif;
+}
+
+/*------------------------------------*/
+
+
+.item-count {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 1rem;
+    font-family: AktivGrotesk Bold, arial, sans-serif;
+}
+
+.item-count button,
+.agregar-al-carro,
+.enviar {
+    background-color: var(--clr-main);
+    border: 0;
+    width: 2rem;
+    height: 2rem;
+    color: #BB191F;
+    background-color: #E2DCD4;
+    font-family: AktivGrotesk Bold, arial, sans-serif;
+    border-radius: .5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 1;
+    border: 2px solid var(--clr-main);
+    transition: .2s;
+}
+
+.item-count button:hover,
+.agregar-al-carro:hover,
+.enviar:hover {
+    background-color: #E2DCD4;
+    color: black;
+}
+
+.agregar-al-carro,
+.enviar {
+    width: auto;
+    height: auto;
+    margin-top: 1rem;
+    padding: 1rem;
+}
