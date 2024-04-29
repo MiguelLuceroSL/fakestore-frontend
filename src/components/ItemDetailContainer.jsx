@@ -9,7 +9,7 @@ const ItemDetailContainer = () => {
     const { id } = useParams();
 
     useEffect(() => {
-        fetch(`http://localhost:3000/productos/${id}`)
+        fetch(`https://bknshop-back.onrender.com/productos/${id}`)
             .then(res => {
                 if (!res.ok) {
                     throw new Error('Error al obtener los detalles del producto');

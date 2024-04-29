@@ -13,8 +13,8 @@ const ItemListContainer = () => {
         const fetchData = async () => {
             try {
                 const url = category
-                    ? `http://localhost:3000/productos?category=${category}`
-                    : 'http://localhost:3000/productos';
+                    ? `https://bknshop-back.onrender.com/productos?category=${category}`
+                    : 'https://bknshop-back.onrender.com/productos';
 
                 const response = await fetch(url);
 

@@ -11,7 +11,7 @@ const Carrito = () => {
     }
 
     const handleComprar = () => {
-        axios.post('http://localhost:3000/comprar', carrito)
+        axios.post('https://bknshop-back.onrender.com/comprar', carrito)
             .then(response => {
                 console.log('Productos comprados:', response.data);
             })

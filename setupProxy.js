@@ -4,7 +4,7 @@ module.exports = function (app) {
     app.use(
         '/comprar',
         createProxyMiddleware({
-            target: 'http://localhost:3000/',
+            target: 'https://bknshop-back.onrender.com',
             changeOrigin: true,
         })
     );
