@@ -7,6 +7,10 @@ header {
     border-bottom: 1px solid rgb(200, 200, 200);
 }
 
+.logo {
+    width: 25px;
+}
+
 .logoMain {
     width: 200px;
     height: 46px;
