@@ -179,11 +179,11 @@
 
 @media (max-width: 1440px) {
     .container-list1 {
-        height: 345vh;
+        height: 370vh;
     }
 
     .container-list3 {
-        height: 145vh;
+        height: 170vh;
     }
 
     .categorias1 {
@@ -267,11 +267,11 @@
 
 @media (max-width: 800px) {
     .container-list1 {
-        height: 700vh;
+        height: 730vh;
     }
 
     .container-list3 {
-        height: 210vh;
+        height: 240vh;
     }
 
     .categorias1 {
@@ -300,7 +300,7 @@
     }
 
     .container-list3 {
-        height: 230vh;
+        height: 260vh;
     }
 
     .categorias2 {
@@ -314,11 +314,11 @@
 
 @media (max-width: 660px) {
     .container-list1 {
-        height: 1400vh;
+        height: 1600vh;
     }
 
     .container-list3 {
-        height: 440vh;
+        height: 460vh;
     }
 
     .categorias1 {
@@ -339,7 +339,7 @@
 
 @media (max-width: 320px) {
     .container-list1 {
-        height: 2350vh;
+        height: 2380vh;
     }
 
 }
