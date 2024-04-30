@@ -11,7 +11,7 @@ const Navbar = () => {
             <Link to="/" className='logo'>
                 <img className="logoMain" src={bknlogo} alt="Logo"></img>
             </Link>
-            <nav className={`nav_items ${isOpen && "open"}`}>
+            <nav className={`nav_items ${isOpen ? "open" : "close"}`}>
                 <ul className='menu'>
                     <li><Link className='menu-link' to="/productos"><span className="menu-palabra">Productos</span></Link></li>
                     <li><Link className='menu-link' to={`/productos/women's clothing`}><span className="menu-palabra">Ropa de mujer</span></Link></li>
@@ -21,7 +21,7 @@ const Navbar = () => {
                 </ul>
             </nav>
             <CartWidget />
-            <div className={`nav_toggle ${isOpen && "open"}`} onClick={() => setIsOpen(!isOpen)}>
+            <div className={`nav_toggle ${isOpen ? "open" : "close"}`} onClick={() => setIsOpen(!isOpen)}>
                 <span></span>
                 <span></span>
                 <span></span>

@@ -34,3 +34,50 @@ header {
     align-items: center;
     justify-content: center;
 }
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: #BB191F;
+}
+
+.menu-palabra {
+    color: white;
+}
+
+/*Inicio de estilo del Carro*/
+
+/*Fin de estilo del Carro*/
+
+.nav_toggle {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav_toggle span {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    margin-bottom: 5px;
+    border-radius: 2px;
+    transform-origin: 5px 0px;
+    transition: all 0.2s linear;
+}
+
+.nav_toggle.open>span {
+    transform: rotate(45deg) translate(0px, 0px);
+}
+
+.nav_toggle.open>span:nth-child(2) {
+    display: none;
+}
+
+.nav_toggle.open>span:nth-child(3) {
+    transform: rotate(-45deg) translate(-5px, 1px);
+}
