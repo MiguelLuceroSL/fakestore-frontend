@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import '../styles/styleNavbar.css'
+import '../styles/styleNavbar2.css'
 import bknlogo from '../images/bknlogo.png'
 import CartWidget from "./CartWidget";
 import { useState } from "react";

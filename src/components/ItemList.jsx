@@ -1,5 +1,5 @@
 import Item from './Item'
-import '../styles/style.css'
+import '../styles/style2.css'
 
 const ItemList = ({ products, title }) => {
     console.log(title);

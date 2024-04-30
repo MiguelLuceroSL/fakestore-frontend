@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/style.css';
+import '../styles/style2.css';
 import { Link } from 'react-router-dom';
 import oferta from '../images/oferta.png';
 

@@ -1,7 +1,7 @@
 import { useContext, useState } from 'react';
 import ItemCount from './ItemCount'
 import { CartContext } from '../context/CartContext';
-import '../styles/styleID.css'
+import '../styles/styleID2.css'
 
 const ItemDetail = ({ item }) => {
     const { agregarAlCarrito } = useContext(CartContext);

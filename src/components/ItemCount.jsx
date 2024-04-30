@@ -1,4 +1,4 @@
-import '../styles/styleID.css';
+import '../styles/styleID2.css';
 
 
 const ItemCount = ({ count, handleRestar, handleSumar, handleAgregar }) => {
