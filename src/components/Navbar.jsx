@@ -7,8 +7,7 @@ import { useState } from "react";
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     return (
-        <div className="navbar">
-
+        <header>
             <Link to="/" className='logo'>
                 <img className="logoMain" src={bknlogo} alt="Logo"></img>
             </Link>
@@ -27,7 +26,7 @@ const Navbar = () => {
                 <span></span>
                 <span></span>
             </div>
-        </div>
+        </header>
     )
 }
 
