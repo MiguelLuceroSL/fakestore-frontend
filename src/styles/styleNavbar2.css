@@ -2,7 +2,7 @@ header {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: space-between;
     background-color: #E2DCD4;
     border-bottom: 1px solid rgb(200, 200, 200);
 }
