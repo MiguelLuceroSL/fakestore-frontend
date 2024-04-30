@@ -20,12 +20,15 @@ const Navbar = () => {
                     <li><Link className='menu-link' to="/productos/electronics"><span className="menu-palabra">Electronica</span></Link></li>
                 </ul>
             </nav>
-            <CartWidget />
-            <div className={`nav_toggle ${isOpen ? "open" : "close"}`} onClick={() => setIsOpen(!isOpen)}>
-                <span></span>
-                <span></span>
-                <span></span>
+            <div className="carro-toggle">
+                <CartWidget />
+                <div className={`nav_toggle ${isOpen ? "open" : "close"}`} onClick={() => setIsOpen(!isOpen)}>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
+
         </header>
     )
 }

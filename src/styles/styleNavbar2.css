@@ -55,6 +55,11 @@ header {
 
 /*Fin de estilo del Carro*/
 
+.carro-toggle {
+    display: flex;
+    flex-direction: row;
+}
+
 .nav_toggle {
     display: flex;
     flex-direction: column;
