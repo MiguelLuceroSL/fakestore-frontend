@@ -1,7 +1,7 @@
 header {
     display: flex;
     flex-direction: row;
-    align-items: self-start;
+    align-items: center;
     justify-content: space-between;
     background-color: #E2DCD4;
     border-bottom: 1px solid rgb(200, 200, 200);
@@ -15,4 +15,22 @@ header {
 .logoMain {
     width: 200px;
     height: 46px;
+}
+
+.nav_items {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    transition: 0.3s ease all;
+    align-items: flex-start;
+    transform: translateX(-500%);
+    border-radius: 10px;
+    background-color: #5D645B;
+}
+
+.nav_items.open {
+    transform: translateX(0);
+    align-items: center;
+    justify-content: center;
 }
