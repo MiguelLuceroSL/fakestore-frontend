@@ -52,6 +52,9 @@ header {
 }
 
 /*Inicio de estilo del Carro*/
+.menu-link.carro {
+    align-items: center;
+}
 
 /*Fin de estilo del Carro*/
 
