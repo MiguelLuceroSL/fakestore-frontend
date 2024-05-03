@@ -31,8 +31,8 @@ header {
 
 .nav_items.open {
     transform: translateX(0);
-    align-items: center;
-    justify-content: center;
+    width: 55vw;
+    list-style: none;
 }
 
 .menu {
@@ -57,7 +57,7 @@ header {
 
 .carro-toggle {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin-right: 10px;
 }
 
