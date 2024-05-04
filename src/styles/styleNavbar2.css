@@ -31,7 +31,6 @@ header {
 
 .nav_items.open {
     transform: translateX(0);
-    width: 55vw;
 }
 
 .menu {
@@ -39,6 +38,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0 2rem 0 2rem;
 }
 
 .menu-link {

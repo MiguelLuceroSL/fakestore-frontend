@@ -1,0 +1,8 @@
+.card-img {
+    display: flex;
+    justify-content: center;
+}
+
+.product-img {
+    max-width: 200px;
+}
