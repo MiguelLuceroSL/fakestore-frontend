@@ -13,7 +13,7 @@ function App() {
 
   return (
     <CartProvider>
-      <BrowserRouter>
+      <BrowserRouter className="m-0 p-0 bg-gray-200 w-full">
         <Navbar />
         <Routes >
           <Route path="/" element={<ItemListContainer />} />
