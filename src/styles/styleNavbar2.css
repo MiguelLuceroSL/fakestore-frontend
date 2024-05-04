@@ -32,7 +32,6 @@ header {
 .nav_items.open {
     transform: translateX(0);
     width: 55vw;
-    list-style: none;
 }
 
 .menu {
@@ -51,9 +50,13 @@ header {
     color: white;
 }
 
+li {
+    list-style: none;
+}
+
 /*Inicio de estilo del Carro*/
-.logo {
-    align-items: center;
+.menu-link.carro {
+    margin-top: 1rem;
 }
 
 /*Fin de estilo del Carro*/
@@ -62,6 +65,7 @@ header {
     display: flex;
     flex-direction: row;
     margin-right: 10px;
+    gap: 1rem;
 }
 
 .nav_toggle {
