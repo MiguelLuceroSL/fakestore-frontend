@@ -1,11 +1,12 @@
 import ItemDetailContainer from './components/ItemDetailContainer';
 import ItemListContainer from './components/ItemListContainer';
 import Navbar from './components/Navbar';
-import './styles/styleApp2.css'
+/*import './styles/styleApp2.css'*/
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Footer from './components/Footer';
 import { CartProvider } from './context/CartContext';
 import Carrito from './components/Carrito';
+import './App.css';
 
 function App() {
 
