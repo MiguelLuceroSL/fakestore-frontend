@@ -31,9 +31,9 @@ const ItemDetailContainer = () => {
     }
 
     return (
-        <>
+        <div className="min-h-screen flex justify-center mt-24">
             {item && <ItemDetail item={item} />}
-        </>
+        </div>
     );
 }
 

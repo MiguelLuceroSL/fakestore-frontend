@@ -1,11 +1,10 @@
 import { Link } from "react-router-dom"
-import '../styles/styleFooter2.css';
-import '../styles/style2.css';
+import '../styles/styleFooter.css';
 
 
 const Footer = () => {
     return (
-        <footer>
+        <footer className="mt-20 bg-[#006D77]">
             <ul className="footer">
                 <li className="icono">
                     <Link to="https://www.linkedin.com/in/lucero-roque-roberto-miguel-2122bb251/" aria-label="LinkedIn" data-social="linkedin" target="_blank" rel="noopener noreferrer" className="link">

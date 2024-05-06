@@ -5,8 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {
-      overflow: {
-        'visible': 'visible !important',
+      fontFamily: {
+        'dm-serif-display': ['DM Serif Display', 'serif'],
+        'belleza': ['Belleza', 'sans-serif']
       }
     },
   },

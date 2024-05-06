@@ -7,7 +7,7 @@ import { useState } from "react";
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     return (
-        <header className="flex flex-row items-center justify-between w-full bg-red-100 border-b-2">
+        <header className="flex flex-row items-center justify-between w-full bg-[#E2DCD4] border-b-2">
             <Link to="/" className='w-6 h-auto'>
                 <img className="w-52 h-11" src={bknlogo} alt="Logo"></img>
             </Link>

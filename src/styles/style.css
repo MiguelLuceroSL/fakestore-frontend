@@ -1,7 +1,7 @@
 /*3-ITEM LIST CONTAINER (productos/inicio)*/
 
 /*3.1-ITEM LIST*/
-.container-list1 {
+/* .container-list1 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -49,10 +49,10 @@
     grid-template-columns: repeat(4, 200px);
     grid-column-gap: 10rem;
     grid-row-gap: 5rem;
-}
+} */
 
 /*3.2-ITEM*/
-.producto-box {
+/* .producto-box {
     width: 12vw;
     height: 30rem;
     display: flex;
@@ -342,4 +342,4 @@
         height: 2420vh;
     }
 
-}
+} */

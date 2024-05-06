@@ -7,9 +7,9 @@ import '../styles/styleNavbar2.css'
 const CartWidget = () => {
     const { cantidadEnCarrito } = useContext(CartContext);
     return (
-        <Link className='menu-link carro' to="/carrito">
-            <img className='logo' src={carro} alt="Logo"></img>
-            <span className='numeroCarro'>{cantidadEnCarrito()}</span>
+        <Link className='flex flex-row items-center mr-4 gap-1 no-underline text-[#BB191F]' to="/carrito">
+            <img className='w-auto h-5 sm:w-auto sm:h-8' src={carro} alt="Logo"></img>
+            <span className='text-[#BDE0FE]'>{cantidadEnCarrito()}</span>
         </Link>
     )
 }
