@@ -40,19 +40,19 @@ const Navbar2 = () => {
                         <div className="flex-10">
                             <ul className="flex gap-8 mr-16 text-[18px]">
                                 <Link spy={true} smooth={true} to="/productos">
-                                    <li className="hover:text-fuchsia-600 transition text-xs md:text-xl border-b-2 border-[#bcdffd] hover:border-fuchsia-600 cursor-pointer">Productos</li>
+                                    <li className="hover:text-black transition text-xs md:text-xl border-b-2 border-[#bcdffd] hover:border-black cursor-pointer">Productos</li>
                                 </Link>
                                 <Link spy={true} smooth={true} to={`/productos/women's clothing`}>
-                                    <li className="hover:text-fuchsia-600 transition text-xl border-b-2 border-[#bcdffd] hover:border-fuchsia-600 cursor-pointer w-max">Ropa de Mujer</li>
+                                    <li className="hover:text-black transition text-xl border-b-2 border-[#bcdffd] hover:border-black cursor-pointer w-max">Ropa de Mujer</li>
                                 </Link>
                                 <Link spy={true} smooth={true} to={`/productos/men's clothing`}>
-                                    <li className="hover:text-fuchsia-600 transition text-xs md:text-xl border-b-2 border-[#bcdffd] hover:border-fuchsia-600 cursor-pointer w-max">Ropa de Hombre</li>
+                                    <li className="hover:text-black transition text-xs md:text-xl border-b-2 border-[#bcdffd] hover:border-black cursor-pointer w-max">Ropa de Hombre</li>
                                 </Link>
                                 <Link spy={true} smooth={true} to="/productos/jewelery">
-                                    <li className="hover:text-fuchsia-600 transition text-xs md:text-xl border-b-2 border-[#bcdffd] hover:border-fuchsia-600 cursor-pointer">Joyería</li>
+                                    <li className="hover:text-black transition text-xs md:text-xl border-b-2 border-[#bcdffd] hover:border-black cursor-pointer">Joyería</li>
                                 </Link>
                                 <Link spy={true} smooth={true} to="/productos/electronics">
-                                    <li className="hover:text-fuchsia-600 transition text-xs md:text-xl border-b-2 border-[#bcdffd] hover:border-fuchsia-600 cursor-pointer">Electronica</li>
+                                    <li className="hover:text-black transition text-xs md:text-xl border-b-2 border-[#bcdffd] hover:border-black cursor-pointer">Electronica</li>
                                 </Link>
                             </ul>
                         </div>

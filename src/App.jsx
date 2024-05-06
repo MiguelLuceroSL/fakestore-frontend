@@ -16,7 +16,7 @@ function App() {
   return (
     <CartProvider>
       <BrowserRouter >
-        <div className="m-0 p-0 bg-[#F7E1D7] w-full">
+        <div className="m-0 p-0 bg-[#fcefef] w-full">
           <Navbar2 />
           {/* <Navbar /> */}
           <Routes >
