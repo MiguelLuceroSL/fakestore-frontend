@@ -34,7 +34,7 @@ const Navbar2 = () => {
             <nav className="border-b border-[#aaaaaa] bg-[#006D77]">
                 <div className="h-10vh flex justify-between z-50 text-[#bcdffd] font-bold lg:py-5 px-4 py-4">
                     <Link className="flex items-center flex-1 " to="/">
-                        <img src={bknlogo} className="h-8 md:h-12 lg:h-16 lg:ml-8" alt="" />
+                        <img src={bknlogo} className="h-8 sm:h-9 md:h-10 lg:h-12 lg:ml-8" alt="" />
                     </Link>
                     <div className="lg:flex  lg: flex-1 items-center justify-end font-thin hidden">
                         <div className="flex-10">

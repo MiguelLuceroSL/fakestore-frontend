@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 
 const Item = ({ product }) => {
     // Truncar la descripción a 25 caracteres
-    const truncarDescription = product.description.length > 60
-        ? `${product.description.substring(0, 60)}...`
+    const truncarDescription = product.description.length > 50
+        ? `${product.description.substring(0, 50)}...`
         : product.description;
 
     const truncarTitle = product.title.length > 32
@@ -27,16 +27,16 @@ const Item = ({ product }) => {
                     </p>
                     <p className='font-thin opacity-60 mb-4 ml-2 pl-2'>Categoria: {product.category}</p>
                     {product.tieneDescuento ? (
-                        <div className="ml-4">
+                        <div className="ml-4 mb-4">
                             <div className="flex flex-row gap-1 items-center">
                                 <span className='line-through text-xs'> ${product.price}</span>
                                 <span className="text-xl font-semibold">${product.precioConDescuentoAplicado} </span>
                                 <p className="text-green-500 ml-2 font-semibold text-lg">{product.descuento}% OFF</p>
                             </div>
-                            <p className="flex justify-center my-2 font-light">¡Ahorras ${product.descuentoEnDinero}!</p>
+                            <p className="flex my-2 font-light">¡Ahorras ${product.descuentoEnDinero}!</p>
                         </div>
                     ) : (
-                        <h4 className="text-xl font-semibold ml-4">${product.price}</h4>
+                        <h4 className="text-xl font-semibold ml-4 mb-10">${product.price}</h4>
                     )}
 
                 </div>
