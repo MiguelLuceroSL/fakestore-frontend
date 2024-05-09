@@ -12,19 +12,19 @@ const Navbar2 = () => {
         <div className="lg:hidden block absolute top-16 w-full left-0 right-0 bg-[#006D77] transition sm:top-16">
             <ul className="text-center text-xl px-20">
                 <Link spy={true} smooth={true} to="/productos">
-                    <li className="my-4 py-4 border-b border-[#12171b] hover:border-fuchsia-600 hover:rounded">Productos</li>
+                    <li className="my-4 py-4 border-b border-[#12171b] hover:border-fuchsia-600 hover:rounded" onClick={handleClick}>Productos</li>
                 </Link>
                 <Link spy={true} smooth={true} to={`/productos/women's clothing`}>
-                    <li className="my-4 py-4 border-b border-[#12171b] hover:border-fuchsia-600 hover:rounded">Ropa de Mujer</li>
+                    <li className="my-4 py-4 border-b border-[#12171b] hover:border-fuchsia-600 hover:rounded" onClick={handleClick}>Ropa de Mujer</li>
                 </Link>
                 <Link spy={true} smooth={true} to={`/productos/men's clothing`}>
-                    <li className="my-4 py-4 border-b border-[#12171b] hover:border-fuchsia-600 hover:rounded">Ropa de Hombre</li>
+                    <li className="my-4 py-4 border-b border-[#12171b] hover:border-fuchsia-600 hover:rounded" onClick={handleClick}>Ropa de Hombre</li>
                 </Link>
                 <Link spy={true} smooth={true} to="/productos/jewelery">
-                    <li className="my-4 py-4 border-b border-[#12171b] hover:border-fuchsia-600 hover:rounded">Joyería</li>
+                    <li className="my-4 py-4 border-b border-[#12171b] hover:border-fuchsia-600 hover:rounded" onClick={handleClick}>Joyería</li>
                 </Link>
                 <Link spy={true} smooth={true} to="/productos/electronics">
-                    <li className="my-4 py-4 border-b border-[#12171b] hover:border-fuchsia-600 hover:rounded">Electronica</li>
+                    <li className="my-4 py-4 border-b border-[#12171b] hover:border-fuchsia-600 hover:rounded" onClick={handleClick}>Electronica</li>
                 </Link>
             </ul>
         </div>
