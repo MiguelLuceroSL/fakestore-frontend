@@ -35,13 +35,6 @@ const Carrito = () => {
         setCarrito(nuevoCarrito);
     }
 
-    let claseCssCarro = 'carrito-vacio';
-    if (carrito.length > 0) {
-        claseCssCarro = 'carro-con-articulos';
-    } else {
-        claseCssCarro = 'carrito-vacio';
-    }
-
     function precioUniFunc(precio) {
         let resultado = parseFloat(precio).toFixed(2);
         return resultado;

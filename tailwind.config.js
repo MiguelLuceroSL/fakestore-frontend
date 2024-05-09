@@ -16,6 +16,7 @@ module.exports = {
         'custom32': '32rem',
         'custom34': '34rem',
         'custom40': '40rem',
+        'custom40': '44rem',
       },
     },
   },
