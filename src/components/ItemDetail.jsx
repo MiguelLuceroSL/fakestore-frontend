@@ -27,7 +27,7 @@ const ItemDetail = ({ item }) => {
     };
 
     return (
-        <div className="bg-white w-full md:w-2/3 mx-10 md:mx-0 rounded-xl flex flex-col md:flex-row justify-center items-center h-custom44 sm:h-custom40 md:h-custom34 mt-20">
+        <div className="bg-white w-full md:w-2/3 mx-10 md:mx-0 rounded-xl flex flex-col md:flex-row justify-center items-center sm:h-custom40 md:h-custom34 mt-20">
             <div className='mr-8'>
                 <img className='w-28 mb-6  sm:w-36 md:mb-6 md:w-48 md:mr-4 ml-0 md:ml-4' src={item.image} alt={item.title} />
             </div>
