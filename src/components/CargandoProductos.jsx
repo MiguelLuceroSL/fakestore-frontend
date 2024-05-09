@@ -1,6 +1,6 @@
 import React from "react"
 
-const MyLoader = () => {
+const CargandoProductos = () => {
     return (
         <article className="relative flex flex-col w-full gap-4 mt-6 animate-pulse items-center justify-center">
             <section className="h-11 w-36 rounded-full bg-slate-400" />
@@ -19,7 +19,7 @@ const MyLoader = () => {
     );
 }
 
-export default MyLoader
+export default CargandoProductos
 
 
 
